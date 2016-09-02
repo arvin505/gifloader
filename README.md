@@ -17,8 +17,8 @@ DoubleCache contans Memory & disk, and you need to new instance width assignatin
 		jcenter()
 	}
 
-	dependencies {<br>
-  	  compile('com.guardanis:imageloader:1.3.3')<br>
+	dependencies {
+  	  compile'com.guardanis:imageloader:1.3.3'
 	}
 	
 #Usage
