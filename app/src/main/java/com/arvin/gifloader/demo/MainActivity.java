@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.arvin.gifloader.cache.DiskCache;
+import com.arvin.gifloader.cache.DoubleCache;
 import com.arvin.gifloader.cache.MemoryCache;
 import com.arvin.gifloader.cache.WeakRefrenceCache;
 import com.arvin.gifloader.config.GifLoaderConfig;
@@ -25,19 +26,17 @@ public class MainActivity extends AppCompatActivity {
 
 
         GifLoaderConfig config = new GifLoaderConfig();
-        config.setCache(DiskCache.getDiskCache(this));
-        config.setLoadingPlaceholder(R.mipmap.ic_launcher)
-                .setNotFoundPlaceholder(R.mipmap.ic_launcher)
-                .setThreadCount(5)
-                ;
+        config.setCache(new DoubleCache(this, new MemoryCache()));
+        config.setThreadCount(5)
+        ;
         GifLoader.getInstance().init(config);
 
 
     }
 
     public void click(View view) {
-        Log.e("TAG","-------instance--onclick---- ");
-        GifLoader.getInstance().displayGif(gifView,"http://f.hiphotos.baidu.com/zhidao/wh%3D600%2C800/sign=ca2fa5088882b9013df8cb3543bd854f/71cf3bc79f3df8dcd4d301becf11728b47102836.jpg");
-        Log.e("TAG","-------instance--onclick- after--- ");
+        Log.e("TAG", "-------instance--onclick---- ");
+        GifLoader.getInstance().displayGif(gifView, "http://f.hiphotos.baidu.com/zhidao/wh%3D600%2C800/sign=ca2fa5088882b9013df8cb3543bd854f/71cf3bc79f3df8dcd4d301becf11728b47102836.jpg");
+        Log.e("TAG", "-------instance--onclick- after--- ");
     }
 }

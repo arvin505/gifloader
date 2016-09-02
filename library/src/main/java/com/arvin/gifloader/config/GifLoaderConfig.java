@@ -44,12 +44,13 @@ public class GifLoaderConfig {
         return this;
     }
 
-    public GifLoaderConfig setLoadingPlaceholder(int resId) {
+    private GifLoaderConfig setLoadingPlaceholder(int resId) {
         displayConfig.loadingResId = resId;
         return this;
     }
 
-    public GifLoaderConfig setNotFoundPlaceholder(int resId) {
+
+    private GifLoaderConfig setNotFoundPlaceholder(int resId) {
         displayConfig.failedResId = resId;
         return this;
     }

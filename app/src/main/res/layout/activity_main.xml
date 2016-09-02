@@ -19,7 +19,7 @@
     <com.arvin.gifloader.widget.GifView
         android:id="@+id/gif"
         android:background="#00ff00"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
 
-        android:layout_height="300dp" />
+        android:layout_height="match_parent" />
 </LinearLayout>

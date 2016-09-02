@@ -51,7 +51,7 @@ public final class GifLoader {
         mConfig = config;
         mGifCache = config.gifCache;
         checkConfig();
-        mGifQueue = new RequestQueue();
+        mGifQueue = new RequestQueue(mConfig.threadCount);
         mGifQueue.start();
     }
 
