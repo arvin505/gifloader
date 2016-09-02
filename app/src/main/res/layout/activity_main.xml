@@ -14,11 +14,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="click"
-        android:text="Hello World!" />
+        android:text="ListView" />
 
     <com.arvin.gifloader.widget.GifView
         android:id="@+id/gif"
-        android:background="#00ff00"
         android:layout_width="match_parent"
 
         android:layout_height="match_parent" />
