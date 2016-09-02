@@ -18,7 +18,7 @@ DoubleCache contans Memory & disk, and you need to new instance width assignatin
 	}
 
 	dependencies {
-  	  compile'com.guardanis:imageloader:1.3.3'
+  	  compile'com.arvin.gifloader:library:1.0.0'
 	}
 	
 #Usage
