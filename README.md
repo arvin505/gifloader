@@ -36,5 +36,5 @@ DoubleCache contans Memory & disk, and you need to new instance width assignatin
         	       setThreadCount(5);
   		   	GifLoader.getInstance().init(config);
         	
-  	and displayGif width
+  	and displayGif with
   			GifLoader.getInstance().displayGif(gifView, "your gif url");
